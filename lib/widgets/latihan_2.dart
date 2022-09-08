@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Latihan1 extends StatelessWidget {
-  const Latihan1({
+class Latihan2 extends StatelessWidget {
+  const Latihan2({
     Key? key,
   }) : super(key: key);
 
@@ -11,7 +11,7 @@ class Latihan1 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.amber[200],
         leading: const FlutterLogo(),
-        title: const Text('Latihan 1'),
+        title: const Text('Latihan 2'),
         actions: [
           IconButton(
             onPressed: () {},
@@ -20,15 +20,7 @@ class Latihan1 extends StatelessWidget {
         ],
       ),
       body: const Center(
-        child: Text(
-          'Hello World',
-          style: TextStyle(
-            fontSize: 50,
-            fontStyle: FontStyle.italic,
-            decoration: TextDecoration.underline,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
+        child: FlutterLogo(size: 200),
       ),
     );
   }
