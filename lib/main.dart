@@ -1,13 +1,28 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import './widgets/kotak_warna.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  List<Map<String, dynamic>> data = List.generate(
+    10,
+    (index) => {
+      "text": "Kotak ${index + 1}",
+      "color": Color.fromARGB(
+        255,
+        Random().nextInt(256),
+        Random().nextInt(256),
+        Random().nextInt(256),
+      ),
+    },
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +33,14 @@ class MyApp extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Column(
-            children: const [
-              KotakWarna(text: "MERAH", color: Colors.red),
-              KotakWarna(text: "KUNING", color: Colors.amber),
-              KotakWarna(text: "HIJAU", color: Colors.green),
-              KotakWarna(text: "PINK", color: Colors.pink),
-              KotakWarna(text: "UNGU", color: Colors.purple),
-              KotakWarna(text: "COKLAT", color: Colors.brown),
-            ],
+            children: data
+                .map(
+                  (e) => KotakWarna(
+                    text: e["text"],
+                    color: e["color"],
+                  ),
+                )
+                .toList(),
           ),
         ),
       ),
