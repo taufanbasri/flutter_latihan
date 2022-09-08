@@ -18,15 +18,15 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Reusable Widget"),
         ),
-        body: ListView.builder(
-          itemCount: 10,
-          itemBuilder: (context, index) => KotakWarna(
-            text: "Kotak ke-${index + 1}",
+        body: GridView.builder(
+          itemCount: 9,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+          itemBuilder: (context, index) => Container(
             color: Color.fromARGB(
               255,
-              150 + Random().nextInt(256),
-              150 + Random().nextInt(256),
-              150 + Random().nextInt(256),
+              60 + Random().nextInt(150),
+              60 + Random().nextInt(150),
+              60 + Random().nextInt(150),
             ),
           ),
         ),
