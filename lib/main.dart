@@ -1,36 +1,17 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
-import './widgets/kotak_warna.dart';
+import './widgets/latihan_1.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Reusable Widget"),
-        ),
-        body: GridView.builder(
-          itemCount: 9,
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-          itemBuilder: (context, index) => Container(
-            color: Color.fromARGB(
-              255,
-              60 + Random().nextInt(150),
-              60 + Random().nextInt(150),
-              60 + Random().nextInt(150),
-            ),
-          ),
-        ),
-      ),
+    return const MaterialApp(
+      title: 'Material App',
+      home: Latihan1(),
     );
   }
 }
