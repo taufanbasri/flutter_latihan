@@ -22,7 +22,12 @@ class Latihan1 extends StatelessWidget {
       body: const Center(
         child: Text(
           'Hello World',
-          style: TextStyle(fontSize: 50),
+          style: TextStyle(
+            fontSize: 50,
+            fontStyle: FontStyle.italic,
+            decoration: TextDecoration.underline,
+            fontWeight: FontWeight.w500,
+          ),
         ),
       ),
     );
