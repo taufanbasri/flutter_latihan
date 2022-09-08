@@ -23,7 +23,10 @@ class Latihan3 extends StatelessWidget {
         child: Container(
           width: 250,
           height: 250,
-          color: Colors.blue,
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(250 / 2),
+          ),
           child: const Center(
             child: Text(
               "Hello",
