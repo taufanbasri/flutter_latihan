@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class Latihan2 extends StatelessWidget {
@@ -19,8 +21,11 @@ class Latihan2 extends StatelessWidget {
           )
         ],
       ),
-      body: const Center(
-        child: FlutterLogo(size: 200),
+      body: Center(
+        child: Transform.rotate(
+          angle: -pi / 2,
+          child: const FlutterLogo(size: 200),
+        ),
       ),
     );
   }
