@@ -19,8 +19,7 @@ class Latihan4 extends StatelessWidget {
           )
         ],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body: Column(
         children: [
           Container(
             width: 150,
@@ -36,6 +35,7 @@ class Latihan4 extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 20),
           Container(
             width: 150,
             height: 150,
