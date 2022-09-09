@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './widgets/latihan_7.dart';
+import './widgets/latihan_8.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Material App',
-      home: Latihan7(),
+      home: Latihan8(),
     );
   }
 }
