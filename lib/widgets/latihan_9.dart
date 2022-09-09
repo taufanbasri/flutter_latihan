@@ -19,34 +19,37 @@ class Latihan9 extends StatelessWidget {
           )
         ],
       ),
-      body: Stack(
-        children: [
-          Container(
-            height: 250,
-            width: 250,
-            color: Colors.green,
-          ),
-          Container(
-            height: 225,
-            width: 225,
-            color: Colors.red,
-          ),
-          Container(
-            height: 200,
-            width: 200,
-            color: Colors.purple,
-          ),
-          Container(
-            height: 175,
-            width: 175,
-            color: Colors.amber,
-          ),
-          Container(
-            height: 150,
-            width: 150,
-            color: Colors.blue,
-          ),
-        ],
+      body: Center(
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Container(
+              height: 250,
+              width: 250,
+              color: Colors.green,
+            ),
+            Container(
+              height: 225,
+              width: 225,
+              color: Colors.red,
+            ),
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.purple,
+            ),
+            Container(
+              height: 175,
+              width: 175,
+              color: Colors.amber,
+            ),
+            Container(
+              height: 150,
+              width: 150,
+              color: Colors.blue,
+            ),
+          ],
+        ),
       ),
     );
   }
