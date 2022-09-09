@@ -23,6 +23,7 @@ class Latihan5 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 width: 150,
@@ -38,7 +39,6 @@ class Latihan5 extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(width: 20),
               Container(
                 width: 150,
                 height: 150,
@@ -52,8 +52,11 @@ class Latihan5 extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(width: 20),
+          const Center(
+            child: FlutterLogo(size: 200),
+          ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 width: 150,
@@ -69,7 +72,6 @@ class Latihan5 extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(width: 20),
               Container(
                 width: 150,
                 height: 150,
