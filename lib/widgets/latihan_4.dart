@@ -11,7 +11,7 @@ class Latihan4 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.amber[200],
         leading: const FlutterLogo(),
-        title: const Text('Latihan 3'),
+        title: const Text('Latihan 4'),
         actions: [
           IconButton(
             onPressed: () {},
